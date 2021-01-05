@@ -3,9 +3,9 @@
      let preweekAR = [];
 
      var next = new Date();
-     for (let i = 0; i <7; i++) {
+     for (let i = 1; i <=7; i++) {
 
-     next.setDate(next.getDate() + (1 + 7+i - next.getDay()) % 7);
+     next.setDate(next.getDate() + (7 + i - next.getDay()) % 7);
      NextweekAR.push(next.toUTCString().slice(0,10))
    }
    console.log(NextweekAR);
